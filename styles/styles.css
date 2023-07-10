@@ -364,5 +364,22 @@ footer{
     .finance{
         padding: 1rem 0;
     }
+    .form-contact-us{
+        margin-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .form-contact-us .form-group{
+        padding-top: 0.2rem;
+        text-align: left;
+    }
+    
+  }
+  .feedback{
+    background-color: #FFC30C;
+    color: white;
+    display: none;
+  }
+.show{
+    display: inline;
   }
   
