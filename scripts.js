@@ -11,7 +11,7 @@ $(window).on('scroll', function() {
   });
 const sendEmail = (data) => {
     axios
-      .post("http://softwarehub.uk:3001/contact-me",data)
+      .post("http://softwarehub.uk/api/email/contact-me",data)
       .then((response) => {
         $(".feedback").addClass("show");
         $("#name").val("");
@@ -33,4 +33,21 @@ $('form').on('submit',async (e)=>{
   messageinfo.consent = "I am happy to be contacted regarding my request"
   sendEmail(messageinfo);
 })
+
+$(() => {
+  const logo = $("#main-logo");
+  const targetSection = $("#company-name");
+  if ($(window).width() <= 767) { 
+  $(window).scroll(() => {
+    const scrollPosition = $(window).scrollTop();
+    const targetOffset = targetSection.offset().top;
+    if (scrollPosition >= targetOffset) {
+      logo.fadeOut(300);
+    } else {
+      logo.fadeIn(300);
+    }
+  });
+}
+});
+
 

@@ -144,7 +144,6 @@ section.centred{
     transform: translateX(-200px);
   
   }
-  
  .fade-in.show {
     opacity: 1;
     transform: translateY(0);
@@ -266,7 +265,7 @@ footer{
 }
 .form-contact-us{
     max-width: 500px;
-    margin: 3rem auto;
+    margin: 1rem auto;
     padding: 1.5rem;
     color: white;
     background-color: #FFC30C;
@@ -351,7 +350,6 @@ footer{
     }
     .services-img{
         width: 100%;
-       
     }
     .services-list{
         width: 100%;
@@ -365,12 +363,20 @@ footer{
         padding: 1rem 0;
     }
     .form-contact-us{
-        margin-top: 0.5rem;
-        padding-bottom: 0.5rem;
+      
     }
     .form-contact-us .form-group{
         padding-top: 0.2rem;
         text-align: left;
+    }
+    img.nav-logo{
+        transition: transform 0.5s ease-in-out;
+    }
+    .main-page {
+        background-position: 70% center;
+      }
+    section.centred{
+        padding-top: 50%;
     }
     
   }
