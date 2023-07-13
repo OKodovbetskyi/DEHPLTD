@@ -72,6 +72,10 @@ ul.contacts-list{
     list-style: none;
     color: var(--main-text-hover);
 }
+.links a.email{
+    text-decoration: none;
+    color: var(--main-text-hover);
+}
 .links a:hover{
     color:var(--main-text-hover);
 }
@@ -89,7 +93,6 @@ section.centred{
     display: flex;
     align-items: center;
     transform: translateY(-50px);
-    scroll-snap-align: start;
     
 }
 .highlight{
@@ -196,7 +199,7 @@ section.centred{
 .services-list ul{
     width: 80%;
 }
-.services-list > ul > li {
+.services-list ul li {
     list-style: none;
     background-image: url('../assets/Fire_fill.png');
     background-repeat: no-repeat;
@@ -204,11 +207,22 @@ section.centred{
     padding-left: 30px;
     line-height: 1.5;
     font-weight: 600;
-  }
-.renewable .services-list:first-child ul li {
-    list-style: none;
+}
+.packages{
+    
+}
+.package-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.packages .card{
+    height: 50%;
+}
+ul#services-list.list > li{
+
     background-image: url('../assets/icons8-energy.png');
-  }
+}
 ul.list{
     padding-left: 0;
     margin-bottom: 2rem;
@@ -307,7 +321,8 @@ footer{
     transition: opacity .5s ease;
 }
 .packages{
-    height: 100vh;
+    height: 95vh;
+    padding-top: 1.5rem ;
 }
 .card-overlay>div>p {
     color: white;
@@ -323,6 +338,8 @@ footer{
     color: var(--main-text-color);
     text-align: justify;
     scroll-margin-top: 90px;
+}
+.contact-form{
 }
   @keyframes fadeIn {
 
@@ -362,9 +379,7 @@ footer{
     .finance{
         padding: 1rem 0;
     }
-    .form-contact-us{
-      
-    }
+  
     .form-contact-us .form-group{
         padding-top: 0.2rem;
         text-align: left;
@@ -374,6 +389,10 @@ footer{
     }
     .main-page {
         background-position: 70% center;
+        -webkit-background-position: 70% center; /* Safari */
+        -moz-background-position: 70% center; /* Firefox */
+        -o-background-position: 70% center; /* Opera */
+        background-position: 70% center; 
       }
     section.centred{
         padding-top: 50%;
