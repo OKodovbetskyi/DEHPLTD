@@ -12,7 +12,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
     <title>Delivering Energy Heating And Power</title>
 </head>
 <body>
@@ -66,9 +65,9 @@
             </div>
         </article>
 </section>
-<div id="services" class="services">
+<div id="services" class="services container">
     <section class="renewable">
-        <img class="services-img image-side" src="./assets/environment-gfbbca5d71_1280.jpg" alt="" />
+        <img class="services-img image-side" src="./assets/renewable.png" alt="" />
         <div class="services-list">
         <ul id="services-list" class="list">
             <h5>RENEWABLE</h5>
@@ -78,7 +77,7 @@
             <li>Battery Storage</li>
             <li>EV Charge Point</li>
         </ul>
-        <button type="button" class="btn btn-outline-warning blue">Enquire</button>
+        <a href='#contact-us' type="button" class="btn btn-outline-warning blue">Enquire</a>
         </div>
     </section>
     <section class="renewable">
@@ -92,22 +91,34 @@
                 <li>Underfloor Heating Planning & Installation</li>
                 <li>Smart Thermostats</li>
             </ul>
-            <button type="button" class="btn btn-outline-warning green">Enquire</button>
+            <a href='#contact-us' type="button" class="btn btn-outline-warning green">Enquire</a>
             </div>
       </section>
 </div>
-     <section class="container packages mx-2">
+     <section class="container packages my-3">
         <h3 class="secondary-header text-center">Why investing in renewable energy?</h3>
         <div class="benefits pt-2">
-            <div >
+            <div class="benefit-div">
         <p  class="benefit-body"><b>Reduced Energy Costs:</b> Switching to renewable energy sources such as solar panels or wind turbines can significantly reduce your reliance on traditional grid electricity. This can lead to substantial savings on energy bills, with potential reductions of up to 70% or more.</p>
+        <div class="benefit-image"><img class="" src="./assets/reduced-cost.png" alt="sustainable home"/>
         </div>
-            <div><p class="benefit-body right">
+        </div>
+            <div class="benefit-div">
+                <div class="benefit-image"><img class="" src="./assets/longterm.png" alt="sustainable home"/>
+                </div>
+                <p class="benefit-body right">
                <b>Long-Term Cost Stability:</b> Unlike fossil fuels, which are subject to price fluctuations and geopolitical factors, renewable energy sources offer more stable and predictable costs over the long term. This can provide homeowners with greater financial security and protection against rising energy prices.
             </p> </div>
-            <div><p class="benefit-body "><b>Environmental Impact: </b>Renewable energy produces little to no greenhouse gas emissions, helping to combat climate change and reduce the carbon footprint of your home. By investing in renewables, homeowners contribute to a cleaner and more sustainable future for generations to come.
-            </p> </div>
-            <div><p class="benefit-body right"><b>Energy Independence:</b>Generating your own renewable energy gives you greater control over your energy supply. You become less reliant on external energy providers and can have peace of mind knowing that you have a reliable and sustainable source of power right at your home.
+            <div class="benefit-div"><p class="benefit-body">
+                <b>Environmental Impact: </b>Renewable energy produces little to no greenhouse gas emissions, helping to combat climate change and reduce the carbon footprint of your home. By investing in renewables, homeowners contribute to a cleaner and more sustainable future for generations to come.
+            </p> 
+            <div class="benefit-image"><img class="" src="./assets/sustainable-world.png" alt="sustainable home"/>
+            </div>
+            </div>
+            <div class="benefit-div">
+                <div class="benefit-image"><img class="" src="./assets/sustainable2.png" alt="sustainable home"/>
+                </div>
+                <p class="benefit-body"><b>Energy Independence:</b>Generating your own renewable energy gives you greater control over your energy supply. You become less reliant on external energy providers and can have peace of mind knowing that you have a reliable and sustainable source of power right at your home.
             </p> </div>
         </div>
     </section>
@@ -132,34 +143,69 @@
     </section>
       <section id="projects" class="projects container">
         <h3 class="secondary-header text-center">Our recent works</h3>
-        <div class="works mt-3">
-            <div class="card">
-                <img src="./assets/img12.jpeg" />
-                <div class="card-overlay">
-                    <div>
-                    <p>Solar Panels Installation</p>
-                    <p>12/03/2022</p>
+        <div class="grid">
+            <div class="grid-item">
+                <div class="card">
+                    <video poster="./assets/videos/solarpanels-cover.png" muted>
+                      <source src="./assets/videos/Solarpanels.MP4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <div class="card-overlay">
+                      <div>
+                        <p>Solar Panels Installation</p>
+                        <p>12 March 2023</p>
+                      </div>
                     </div>
                 </div>
             </div>
-            <div class="card mt-3">
-                <img src="./assets/img12.jpeg" />
-                <div class="card-overlay">
-                    <div>
-                        <p>Solar Panels Installation</p>
-                        <p>12/03/2022</p>
-                    </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img src="./assets/img12.jpeg" />
+                    <div class="card-overlay ">
+                        <div>
+                        <p>Heatpump Installation</p>
+                        <p>28 May 2023</p>
+                        </div>
+                </div>
                 </div>
             </div>
-            <div class="card mt-3">
-                <img src="./assets/img12.jpeg" />
-                <div class="card-overlay">
-                    <div>
-                        <p>Solar Panels Installation</p>
+            <div class="grid-item">
+                <div class="card">
+                    <img src="./assets/boiler-installation.JPG" />
+                    <div class="card-overlay ">
+                        <div>
+                        <p>Heatpump Hydrobox installation</p>
+                        <p>28 May 2023</p>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img src="./assets/img12.jpeg" />
+                    <div class="card-overlay">
+                        <div>
+                        <p>New Boiler installation</p>
                         <p>12/03/2022</p>
                         </div>
                 </div>
+                </div>
             </div>
+            <div class="grid">
+                <div class="grid-item">
+                    <div class="card">
+                        <video poster="./assets/videos/solarpanels.png" muted>
+                          <source src="./assets/videos/Solar-panels.MP4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                        <div class="card-overlay">
+                          <div>
+                            <p>Solar Panels Installation</p>
+                            <p>12 March 2023</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
         </div>
       </section>
       <section id="contact-us" class="contact-form">
@@ -180,7 +226,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Message</label>
-                <textarea id='message' class="form-control" placeholder="Hi! Can we schedule appointment for heatpump installation?" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea id='message' class="form-control" placeholder="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div class="form-check mt-3">
                 <input id='consent' class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
@@ -188,7 +234,7 @@
                   I am happy to be contacted regarging my request.
                 </label>
               </div>
-            <button type="submit" class="btn btn-outline-warning white">Submit</button>
+            <button type="submit" class="btn btn-outline-warning white">Send</button>
           </form>
       </section>
     </div>

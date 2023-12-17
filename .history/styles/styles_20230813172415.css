@@ -346,10 +346,7 @@ footer{
   @media screen and (max-width: 480px) {
     .benefit-div{
         flex-direction: column;
-    }
-    .benefit-image{
-        width: 100%;
-     
+       
     }
     .benefit-image>img{
         width: 100%;
@@ -446,7 +443,7 @@ footer{
     text-align: center;
 }
 .benefit-image>img{
-    width: 100%;
+    width: 50%;
 }
 .benefit-div{
     display: flex;

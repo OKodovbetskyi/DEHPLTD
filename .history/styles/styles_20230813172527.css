@@ -446,7 +446,7 @@ footer{
     text-align: center;
 }
 .benefit-image>img{
-    width: 100%;
+    width: 70%;
 }
 .benefit-div{
     display: flex;
